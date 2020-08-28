@@ -40,9 +40,12 @@ inquirer
       default: 'Do better!',
     },
     {
-      type: "input",
+      type: "checkbox",
       name: 'License',
-      message: 'Please describe the content',
+      message: 'Which license',
+      choices: [
+        'MIT', 'Creative Commons', 'European Union Public License 1.1', 'Do What the F*ck You Want to Public License',
+      ],
       default: 'Do better!',
     },
     {
