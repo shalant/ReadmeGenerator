@@ -1,82 +1,77 @@
 // array of questions for user
 const questions = [
-
+  {
+    type: "input",
+    name: 'title',
+    message: 'What is the title of your project?',
+    default: 'Do better!',
+  },
+  {
+    type: "input",
+    name: 'description',
+    message: 'Please describe the content',
+    default: 'Do better!',
+  },
+  {
+    type: "input",
+    name: 'table of Contents',
+    message: 'Please describe the content',
+    default: 'Do better!',
+  },
+  {
+    type: "input",
+    name: 'installation',
+    message: 'Please describe the content',
+    default: 'Do better!',
+  },
+  {
+    type: "input",
+    name: 'usage',
+    message: 'Please describe the content',
+    default: 'Do better!',
+  },
+  {
+    type: "checkbox",
+    name: 'license',
+    message: 'Which license',
+    choices: [
+      'MIT', 'ISC', 'Creative Commons', 'European Union Public License 1.1', 'Do What the F*ck You Want to Public License',
+    ],
+    default: 'Do better!',
+  },
+  {
+    type: "input",
+    name: 'contributing',
+    message: 'Please describe the content',
+    default: 'Do better!',
+  },
+  {
+    type: "input",
+    name: 'tests',
+    message: 'Please describe the content',
+    default: 'Do better!',
+  },
+  {
+    type: "input",
+    name: 'questions',
+    message: 'Please describe the content',
+    default: 'Do better!',
+  },
 ];
 
 
 //https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
 const inquirer = require('inquirer');
 
-inquirer
-  .prompt([
-    {
-      type: "input",
-      name: 'Title',
-      message: 'What is the title of your project?',
-      default: 'Do better!',
-    },
-    {
-      type: "input",
-      name: 'Description',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-    {
-      type: "input",
-      name: 'Table of Contents',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-    {
-      type: "input",
-      name: 'Installation',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-    {
-      type: "input",
-      name: 'Usage',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-    {
-      type: "checkbox",
-      name: 'License',
-      message: 'Which license',
-      choices: [
-        'MIT', 'ISC', 'Creative Commons', 'European Union Public License 1.1', 'Do What the F*ck You Want to Public License',
-      ],
-      default: 'Do better!',
-    },
-    {
-      type: "input",
-      name: 'Contributing',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-     {
-      type: "input",
-      name: 'License',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-    {
-      type: "input",
-      name: 'Tests',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-    {
-      type: "input",
-      name: 'Questions',
-      message: 'Please describe the content',
-      default: 'Do better!',
-    },
-  ])
+function init () {
+inquirer.prompt(questions)
   .then(answers => {
-    console.info('Answers:', answers);
+    console.log(answers)
+    var fs = require('fs');
+    fs.writeFile("log.txt", function(err, buf) {
+    console.log(buf.toString());
   });
-
+}
   //from bcs tutor
   //const questions = [
     //{
