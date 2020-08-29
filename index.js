@@ -44,7 +44,7 @@ inquirer
       name: 'License',
       message: 'Which license',
       choices: [
-        'MIT', 'Creative Commons', 'European Union Public License 1.1', 'Do What the F*ck You Want to Public License',
+        'MIT', 'ISC', 'Creative Commons', 'European Union Public License 1.1', 'Do What the F*ck You Want to Public License',
       ],
       default: 'Do better!',
     },
@@ -78,12 +78,12 @@ inquirer
   });
 
   //from bcs tutor
-  const questions = [
-    {
-      type: "input",
-      name: "github",
-      message: "What is your GitHub username?"
-    }
+  //const questions = [
+    //{
+      //type: "input",
+      //name: "github",
+      //message: "What is your GitHub username?"
+    //}
 
 
 
@@ -93,7 +93,11 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+//  https://tutorialedge.net/nodejs/reading-writing-files-with-nodejs/
+  var fs = require('fs');
+  fs.writeFile("log.txt", function(err, buf) {
+    console.log(buf.toString());
+  }
 }
 
 // function call to initialize program
