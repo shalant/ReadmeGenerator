@@ -1,3 +1,5 @@
+'use strict';
+
 // array of questions for user
 const questions = [
   {
@@ -9,31 +11,31 @@ const questions = [
   {
     type: "input",
     name: 'description',
-    message: 'Please describe the content',
+    message: 'Please describe the project',
     default: 'Do better!',
   },
   {
     type: "input",
     name: 'table of Contents',
-    message: 'Please describe the content',
+    message: 'XXXXXXXXX',
     default: 'Do better!',
   },
   {
     type: "input",
     name: 'installation',
-    message: 'Please describe the content',
+    message: 'How is this application installed?',
     default: 'Do better!',
   },
   {
     type: "input",
     name: 'usage',
-    message: 'Please describe the content',
+    message: 'How is this application used?',
     default: 'Do better!',
   },
   {
     type: "checkbox",
     name: 'license',
-    message: 'Which license',
+    message: 'Which license is preferred?',
     choices: [
       'MIT', 'ISC', 'Creative Commons', 'European Union Public License 1.1', 'Do What the F*ck You Want to Public License',
     ],
@@ -42,7 +44,7 @@ const questions = [
   {
     type: "input",
     name: 'contributing',
-    message: 'Please describe the content',
+    message: 'Who contributed to this project?',
     default: 'Do better!',
   },
   {
@@ -54,21 +56,18 @@ const questions = [
   {
     type: "input",
     name: 'questions',
-    message: 'Please describe the content',
+    message: 'Who to e-mail with questions?',
     default: 'Do better!',
   },
 ];
 
-
-//https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
 const inquirer = require('inquirer');
-
 function init () {
 inquirer.prompt(questions)
   .then(answers => {
     console.log(answers)
     var fs = require('fs');
-    fs.writeFile("log.txt", function(err, buf) {
+    fs.writeFile("README.md", function(err, buf) {
     console.log(buf.toString());
   });
 }
@@ -87,13 +86,7 @@ function writeToFile(fileName, data) {
 }
 
 // function to initialize program
-function init() {
-//  https://tutorialedge.net/nodejs/reading-writing-files-with-nodejs/
-  var fs = require('fs');
-  fs.writeFile("log.txt", function(err, buf) {
-    console.log(buf.toString());
-  }
-}
+
 
 // function call to initialize program
 init();
