@@ -1,4 +1,7 @@
 'use strict';
+var fs = require('fs');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // array of questions for user
 const questions = [
@@ -61,28 +64,30 @@ const questions = [
   },
 ];
 
-const inquirer = require('inquirer');
-function init () {
-inquirer.prompt(questions)
-  .then(answers => {
-    console.log(answers)
-    var fs = require('fs');
-    fs.writeFile("README.md", function(err, buf) {
-    console.log(buf.toString());
-  });
-}
-  //from bcs tutor
-  //const questions = [
-    //{
-      //type: "input",
-      //name: "github",
-      //message: "What is your GitHub username?"
-    //}
 
+function init() {
+  inquirer.prompt(questions)
+    .then(answers => {
+      console.log(answers)
+      //generateMarkdown(answers);
+      writeToFile("README.md", generateMarkdown(answers));
+    });
+};
+//from bcs tutor
+//const questions = [
+//{
+//type: "input",
+//name: "github",
+//message: "What is your GitHub username?"
+//}
 
 
 // function to write README file
 function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, function(err, buf) {
+    if (err) console.log(err)
+    if (buf) console.log(buf)
+  });
 }
 
 // function to initialize program
@@ -90,3 +95,6 @@ function writeToFile(fileName, data) {
 
 // function call to initialize program
 init();
+
+
+
