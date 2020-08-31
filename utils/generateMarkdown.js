@@ -5,12 +5,12 @@ function generateMarkdown(data) {
   ## Description:
   ### ${data.description}
   ## Table of Contents:
-  ###     *[1. Installation](#Installation)
-  ###     *[2. Usage](#Usage)
-  ###     *[3. License](#License)
-  ###     *[4. Contributing](#Contributing)
-  ###     *[5. Testing](#Tests)
-  ###     *[6. Questions](#Questions)
+  ###     [1. Installation](#Installation)
+  ###     [2. Usage](#Usage)
+  ###     [3. License](#License)
+  ###     [4. Contributing](#Contributing)
+  ###     [5. Testing](#Tests)
+  ###     [6. Questions](#Questions)
 
   ### 1. Installation
   #### ${data.installation}
@@ -20,6 +20,7 @@ function generateMarkdown(data) {
 
   ### 3. License
   #### ${data.license[0] || null}
+  #### ![license image](https://img.shields.io/badge/label=license&message=${data.license}&color=orange)
 
   ### 4. Contributing
   #### ${data.contributing}
