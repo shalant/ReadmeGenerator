@@ -58,7 +58,7 @@ const questions = [
   },
   {
     type: "input",
-    name: 'github username',
+    name: 'githubUsername',
     message: 'What is your Github Username?',
     default: 'https://github.com/alanturing',
   },
