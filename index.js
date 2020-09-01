@@ -1,4 +1,3 @@
-//setup important dependencies
 'use strict';
 var fs = require('fs');
 const inquirer = require('inquirer');
@@ -83,3 +82,6 @@ function writeToFile(fileName, data) {
     if (buf) console.log(buf)
   });
 }
+
+//invoke the initialization
+init();
