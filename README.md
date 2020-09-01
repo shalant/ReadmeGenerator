@@ -1,7 +1,11 @@
 # PovertySolution
+  
   ## Description:
-  ### Upon installation, this application will reduce global poverty, quickly
+  ### Upon installation, this application will reduce global poverty
   #### ![license image](https://img.shields.io/badge/License-MIT-color=orange.svg)
+
+![screenshot](images/readmeGen.png)
+
   ## Table of Contents:
   ###     [1. Installation](#Installation)
   ###     [2. Usage](#Usage)
@@ -22,10 +26,10 @@
   #### ![license image](https://img.shields.io/badge/License-MIT-color=orange.svg)
 
   ### 4. Contributing
-  #### Doug Rosenberg and several wonderful tutors
+  #### Doug Rosenberg and several helpful tutors
 
   ### 5. Tests
-  #### So far, just running, refining, and doing it again
+  #### So far running and refining, then re-repeating
 
   ### 6. Questions
   #### With any questions send an e-mail to doug.rosenberg@gmail.com
