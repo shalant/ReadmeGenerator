@@ -1,6 +1,7 @@
-# d
+# PovertySolution
   ## Description:
-  ### d
+  ### Upon installation, this application will reduce global poverty, quickly
+  #### ![license image](https://img.shields.io/badge/License-MIT-color=orange.svg)
   ## Table of Contents:
   ###     [1. Installation](#Installation)
   ###     [2. Usage](#Usage)
@@ -10,22 +11,23 @@
   ###     [6. Questions](#Questions)
 
   ### 1. Installation
-  #### d
+  #### Visit the Github page (below), clone the repository, in terminal go to the root, type NPM install. Then simply type node index.js
 
   ### 2. Usage
-  #### d
+  #### Anyone can solve poverty from the ease of their own keyboard
 
   ### 3. License
-  #### ISC
-  #### ![license image](https://img.shields.io/badge/License-ISC-color=orange.svg)
+  #### MIT
+  #### This application is licensed by:
+  #### ![license image](https://img.shields.io/badge/License-MIT-color=orange.svg)
 
   ### 4. Contributing
-  #### d
+  #### Doug Rosenberg and several wonderful tutors
 
   ### 5. Tests
-  #### d
+  #### So far, just running, refining, and doing it again
 
   ### 6. Questions
-  #### With any questions send an e-mail to d
-  #### Visit https://github.com/d
+  #### With any questions send an e-mail to doug.rosenberg@gmail.com
+  #### Visit https://github.com/shalant
 
