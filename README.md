@@ -1,7 +1,7 @@
-# PovertySolution
+# It's a Wonderful World
   
   ## Description:
-  ### Upon installation, this application will reduce global poverty
+  ### Makes Jimmy Stewart laugh
   #### ![license image](https://img.shields.io/badge/License-MIT-color=orange.svg)
 
 ![screenshot](images/readmeGen.png)
@@ -15,10 +15,10 @@
   ###     [6. Questions](#Questions)
 
   ### 1. Installation
-  #### Visit the Github page (below), clone the repository, in terminal go to the root, type NPM install. Then simply type node index.js
+  #### download from git hub, open terminal, type npm install, then node index.js
 
   ### 2. Usage
-  #### Anyone can solve poverty from the ease of their own keyboard
+  #### To be silly and win points
 
   ### 3. License
   #### MIT
@@ -26,10 +26,10 @@
   #### ![license image](https://img.shields.io/badge/License-MIT-color=orange.svg)
 
   ### 4. Contributing
-  #### Doug Rosenberg and several helpful tutors
+  #### doug rosenberg
 
   ### 5. Tests
-  #### So far running and refining, then re-repeating
+  #### try injecting bleach and use tremendous light
 
   ### 6. Questions
   #### With any questions send an e-mail to doug.rosenberg@gmail.com
