@@ -20,7 +20,7 @@ function generateMarkdown(data) {
 
   ### 3. License
   #### ${data.license[0] || null}
-  #### ![license image](https://img.shields.io/badge/label=license&message=${data.license}&color=orange)
+  #### ![license image](https://img.shields.io/badge/License-${data.license}-color=orange.svg)
 
   ### 4. Contributing
   #### ${data.contributing}

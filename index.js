@@ -1,3 +1,4 @@
+//setup important dependencies
 'use strict';
 var fs = require('fs');
 const inquirer = require('inquirer');
@@ -64,7 +65,7 @@ const questions = [
   },
 ];
 
-
+//function to intitize program
 function init() {
   inquirer.prompt(questions)
     .then(answers => {
@@ -73,13 +74,6 @@ function init() {
       writeToFile("README.md", generateMarkdown(answers));
     });
 };
-//from bcs tutor
-//const questions = [
-//{
-//type: "input",
-//name: "github",
-//message: "What is your GitHub username?"
-//}
 
 
 // function to write README file
@@ -89,12 +83,3 @@ function writeToFile(fileName, data) {
     if (buf) console.log(buf)
   });
 }
-
-// function to initialize program
-
-
-// function call to initialize program
-init();
-
-
-
