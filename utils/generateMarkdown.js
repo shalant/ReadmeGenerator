@@ -3,6 +3,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ## Description:
   ### ${data.description}
+  #### ![license image](https://img.shields.io/badge/License-${data.license}-color=orange.svg)
   ## Table of Contents:
   ###     [1. Installation](#Installation)
   ###     [2. Usage](#Usage)
@@ -19,6 +20,7 @@ function generateMarkdown(data) {
 
   ### 3. License
   #### ${data.license[0] || null}
+  #### This application is licensed by:
   #### ![license image](https://img.shields.io/badge/License-${data.license}-color=orange.svg)
 
   ### 4. Contributing

@@ -68,7 +68,7 @@ const questions = [
 function init() {
   inquirer.prompt(questions)
     .then(answers => {
-      console.log(answers)
+     //this is dundant: console.log(answers)
       //generateMarkdown(answers);
       writeToFile("README.md", generateMarkdown(answers));
     });
