@@ -1,9 +1,13 @@
 function generateMarkdown(data) {
   console.log(data);
   return `# ${data.title}
+  
   ## Description:
   ### ${data.description}
   #### ![license image](https://img.shields.io/badge/License-${data.license}-color=orange.svg)
+
+![screenshot](images/readmeGen.png)
+
   ## Table of Contents:
   ###     [1. Installation](#Installation)
   ###     [2. Usage](#Usage)
